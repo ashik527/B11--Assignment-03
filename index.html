@@ -29,6 +29,28 @@
           }
         }
       </script>
+      <!-- Custom CSS for slide-up animation -->
+  <style>
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Applying animation */
+    .animate-slide-up {
+      animation: slideUp 1s ease-out forwards;
+    }
+
+    .delay-500 {
+      animation-delay: 0.5s;
+    }
+  </style>
 </head>
 <body class="sora-normal">
     <header class="md:container mx-2 lg:mx-auto">
@@ -98,8 +120,8 @@
         <!-- Nav Section ends -->
          <section class="banner mt-24">
             <div class="flex flex-col text-center">
-                <h1 class="font-medium text-3xl lg:text-6xl">Freshness <span class="text-primary-c">You Can</span> </h1>
-                <h1 class="font-medium text-3xl lg:text-6xl"> <span class="text-primary-c">Count</span> On, Prices You'll Love!</h1>
+                <h1 class="animate-slide-up opacity-0 font-medium text-3xl lg:text-6xl">Freshness <span class="text-primary-c">You Can</span> </h1>
+                <h1 class="opacity-0 animate-slide-up delay-500 font-medium text-3xl lg:text-6xl"> <span class="text-primary-c">Count</span> On, Prices You'll Love!</h1>
                 <p class="mt-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
             <section class="hero-image mt-5">
